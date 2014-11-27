@@ -103,3 +103,30 @@ body {
     margin-right: 50px;
     min-height: 100px;
 }
+
+.team .row .photo {
+    float: left;
+    padding-right: 15px;
+}
+.team .row .text {
+    float: left;
+    width: 700px;
+}
+.team .row img {
+    width: 150px;
+    float: left;
+}
+.team .row .member {
+    float: left;
+    width: 100%;
+    font-size: 21px;
+    color: #000000;
+}
+
+.team .row .member:hover {
+    color: #269abc;
+}
+
+.team .row {
+    margin-bottom: 20px;
+}
