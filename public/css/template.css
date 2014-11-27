@@ -71,6 +71,11 @@ body {
     float: left;
 }
 
+.star-button {
+    float: right;
+    margin-top: 6px;
+}
+
 .container {
     padding-top: 55px;
     width: 960px;
