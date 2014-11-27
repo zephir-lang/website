@@ -16,8 +16,11 @@
             background-size: cover;
             background-image: url("http://static.phalconphp.com/zephir/tumblr_static_paintedargyle.png");
             text-align: center;
-            padding-top: 25px;
             color: #ffffff;
+        }
+        .header .wrapper {
+            padding-top: 25px;
+            overflow: hidden;
         }
         #logo {
             display: block;
@@ -36,20 +39,80 @@
         .logotype:hover {
             border-color: #269abc;
         }
+
+        .buttons {
+            margin: 25px auto;
+            overflow: hidden;
+            width: 325px;
+        }
+        .buttons a {
+            float: left;
+            padding-left: 20px;
+            color: snow;
+        }
+        .buttons a:hover {
+            color: #269abc;
+        }
+
+        .latest-info {
+            background-color: #ffffff;
+            overflow: hidden;
+            width: 634px;
+            margin: 32px auto;
+            color: #000000;
+            text-align: left;
+            padding: 15px 20px;
+        }
+        .latest-info .block {
+            float: left;
+            margin-right: 20px;
+        }
+        .latest-info .block span {
+            float: left;
+            width: 60px;
+            padding-right: 10px;
+        }
+        .latest-info .block a {
+            line-height: 43px;
+            float: left;
+        }
     </style>
 </head>
 <body>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <div class="header">
-        <h1>Zephir Language</h1>
-        <span>Zephir is a high level compiled language aimed to the creation of C-extensions for PHP</span>
+        <div class="wrapper">
+            <h1>Zephir Language</h1>
+            <span>Zephir is a high level compiled language aimed to the creation of C-extensions for PHP</span>
 
-        <a href="/" id="logo">
-            <img src="http://static.phalconphp.com/zephir/logo.png" alt="" class="logotype">
-        </a>
+            <div class="buttons">
+                <a href="#">Home</a>
+                <a href="#">Get started</a>
+                <a href="#">Team</a>
+                <a href="#">Donate</a>
+            </div>
+
+            <div class="latest-info">
+                <div class="block">
+                <span>
+                    Latest <br /> stable
+                </span>
+                    <a href="#">0.5.8a</a>
+                </div>
+                <div class="block">
+                <span>
+                    Latest <br /> nightly
+                </span>
+                    <a href="#">0.5.9a #ee96c7</a>
+                </div>
+            </div>
+
+            <a href="/" id="logo">
+                <img src="http://static.phalconphp.com/zephir/logo.png" alt="" class="logotype">
+            </a>
+        </div>
     </div>
 
-    <a href="">Home</a>
-    <a href="">Team</a>
+    <h2>Why Zephir?</h2>
 </body>
 </html>
