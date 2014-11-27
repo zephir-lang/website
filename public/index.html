@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="scotchApp">
 <head>
     <meta charset="UTF-8">
     <title>Zephir Language</title>
@@ -110,8 +110,11 @@
             min-height: 100px;
         }
     </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="app.js"></script>
 </head>
-<body>
+<body ng-controller="mainController">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <div class="header">
         <div class="wrapper">
@@ -120,10 +123,10 @@
 
             <div class="buttons">
                 <a href="#">Home</a>
-                <a href="#">Get started</a>
+                <a href="#get-started">Get started</a>
                 <a href="#">Try it online</a>
                 <a href="#">Docs</a>
-                <a href="#">Team</a>
+                <a href="#team">Team</a>
                 <a href="#">Donate</a>
             </div>
 
@@ -147,54 +150,10 @@
             </a>
         </div>
     </div>
+
+
     <div class="container">
-        <h2 class="centered">Why Zephir?</h2>
-
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Performance</h2>
-                <p>
-                    Get more performance for you code with C programming language and low lovel optimizations in Zephir Kernel module.
-                </p>
-            </div>
-            <div class="col-md-4">
-                <h2>Safety</h2>
-                <p>
-                    Dont think about memory allocation/deallocation and critical errors or exceptions.
-                </p>
-            </div>
-            <div class="col-md-4">
-                <h2>New futures</h2>
-                <p>
-                    Improve your skill with new futures.
-                </p>
-            </div>
-            <div class="col-md-4">
-                <h2>Title 4</h2>
-                <p>
-                    Simeple text simple text simple text
-                    Simeple text simple text simple text
-                    Simeple text simple text simple text
-                </p>
-            </div>
-        </div>
-
-        <h2 class="centered">Popular projects</h2>
-        
-        <div class="row friends">
-            <div class="block">
-                <a href="http://phalconphp.com/" class="centered">
-                    <h4>Phalcon Framework</h4>
-                </a>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Phalcon_logo.png" width="100%">
-            </div>
-            <div class="block">
-                <a href="http://phalconphp.com/" class="centered">
-                    <h4>Lynx ORM</h4>
-                </a>
-                <img src="http://dmtry.me/img/logos/lynx_bnw.svg" width="100%">
-            </div>
-        </div>
+        <div ng-view></div>
     </div>
 </body>
 </html>
