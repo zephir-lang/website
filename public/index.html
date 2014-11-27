@@ -92,10 +92,22 @@
          */
         .row {
             width: 100%;
+            overflow: hidden;
         }
         .col-md-4 {
             width: 25%;
             float: left;
+        }
+
+        .friends {
+            width: 600px;
+            margin: 0 auto;
+        }
+        .friends .block {
+            width: 250px;
+            float: left;
+            margin-right: 50px;
+            min-height: 100px;
         }
     </style>
 </head>
@@ -138,7 +150,7 @@
     <div class="container">
         <h2 class="centered">Why Zephir?</h2>
 
-        <div class="roq">
+        <div class="row">
             <div class="col-md-4">
                 <h2>Performance</h2>
                 <p>
@@ -164,6 +176,23 @@
                     Simeple text simple text simple text
                     Simeple text simple text simple text
                 </p>
+            </div>
+        </div>
+
+        <h2 class="centered">Popular projects</h2>
+        
+        <div class="row friends">
+            <div class="block">
+                <a href="http://phalconphp.com/" class="centered">
+                    <h4>Phalcon Framework</h4>
+                </a>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Phalcon_logo.png" width="100%">
+            </div>
+            <div class="block">
+                <a href="http://phalconphp.com/" class="centered">
+                    <h4>Lynx ORM</h4>
+                </a>
+                <img src="http://dmtry.me/img/logos/lynx_bnw.svg" width="100%">
             </div>
         </div>
     </div>
