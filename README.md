@@ -1,6 +1,12 @@
 Zephir Website
 ========
-My idea about creation website for Zephir.
+
+> Website for Zephir language.
+
+Try it online
+-------------
+
+Setup worker 
 
 License
 -------
