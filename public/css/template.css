@@ -13,6 +13,7 @@ body {
     background-image: url("http://static.phalconphp.com/zephir/tumblr_static_paintedargyle.png");
     text-align: center;
     color: #ffffff;
+    padding-bottom: 55px;
 }
 .header .wrapper {
     padding-top: 25px;
@@ -79,7 +80,6 @@ body {
 }
 
 .container {
-    padding-top: 55px;
     width: 960px;
     margin: 0 auto;
 }
@@ -136,4 +136,10 @@ body {
 
 .team .row {
     margin-bottom: 20px;
+}
+
+.watch-row {
+    background-color: #000000;
+    width: 100%;
+    padding: 15px 0;
 }
