@@ -1,0 +1,17 @@
+{
+  "name": "website",
+  "version": "0.0.0",
+  "homepage": "https://github.com/zephir-lang/website",
+  "authors": [
+    "Дмитрий Пацура <talk@dmtry.me>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/src/vendor",
+    "test",
+    "tests"
+  ]
+}
