@@ -143,3 +143,7 @@ body {
     width: 100%;
     padding: 15px 0;
 }
+
+.goals i {
+    font-size: 90px;
+}
