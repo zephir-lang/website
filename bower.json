@@ -13,5 +13,8 @@
     "public/src/vendor",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "foundation": "~5.4.7"
+  }
 }
