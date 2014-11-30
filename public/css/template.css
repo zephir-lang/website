@@ -95,10 +95,6 @@ body {
 /**
  * Emulate bt grid
  */
-.row {
-    width: 100%;
-    overflow: hidden;
-}
 .col-md-4 {
     width: 25%;
     float: left;
@@ -150,6 +146,7 @@ body {
     background-color: #000000;
     width: 100%;
     padding: 15px 0;
+    overflow: hidden;
 }
 
 .goals i {
