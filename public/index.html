@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Zephir Language</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/src/vendor/foundation/css/normalize.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="/css/my-foundation.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="/css/template.css" media="screen" />
@@ -13,7 +14,10 @@
 </head>
 <body ng-controller="mainController">
     <div class="header">
-        <div class="wrapper">
+        <a href="/" id="logo">
+            <img src="http://static.phalconphp.com/zephir/logo.png" alt="" class="logotype">
+        </a>
+        <div class="row wrapper small-4 large-12 columns center-block">
             <h1>Zephir Language</h1>
             <span>Zephir is a high level compiled language aimed to the creation of C-extensions for PHP</span>
 
@@ -26,7 +30,7 @@
                 <a href="https://pledgie.com/campaigns/27405?">Donate</a>
             </div>
 
-            <div class="latest-info">
+            <div class="latest-info large-offset-2 large-8 columns">
                 <div class="block">
                 <span>
                     Latest <br /> stable
@@ -42,10 +46,6 @@
 
                 <iframe src="http://ghbtns.com/github-btn.html?user=phalcon&repo=zephir&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="160px" height="30px" class="star-button"></iframe>
             </div>
-
-            <a href="/" id="logo">
-                <img src="http://static.phalconphp.com/zephir/logo.png" alt="" class="logotype">
-            </a>
         </div>
     </div>
 
