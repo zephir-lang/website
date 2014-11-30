@@ -13,7 +13,7 @@ body {
     background-image: url("http://static.phalconphp.com/zephir/tumblr_static_paintedargyle.png");
     text-align: center;
     color: #ffffff;
-    padding-bottom: 55px;
+    margin-bottom: 55px;
 }
 .header .wrapper {
     padding-top: 25px;
@@ -26,7 +26,7 @@ body {
     position: absolute;
     left: 50%;
     margin-left: -78px;
-    top: 332px;
+    top: 312px;
 }
 .logotype {
     border-radius: 50%;
