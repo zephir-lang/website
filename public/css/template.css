@@ -109,7 +109,9 @@ a:hover {
     width: 16.6%;
     float: left;
 }
-
+.buffer-bottom {
+    padding-bottom: 25px;
+}
 .friends {
     width: 600px;
     margin: 0 auto;
