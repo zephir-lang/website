@@ -10,7 +10,7 @@ a {
     color: #6d7481;
 }
 a:hover {
-    color: #269abc;
+    color: #269abc !important;
     text-decoration: none;
 }
 
@@ -61,9 +61,6 @@ a:hover {
     float: left;
     padding-left: 20px;
     color: snow;
-}
-.buttons a:hover {
-    color: #269abc;
 }
 .latest-info {
     background-color: #ffffff;
