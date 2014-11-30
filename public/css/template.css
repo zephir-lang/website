@@ -154,6 +154,14 @@ body {
     color: #269abc;
 }
 
+/**
+ * For medium screen fix - 2x2
+ */
+.goals > div {
+    height: 255px;
+    overflow: hidden;
+}
+
 footer {
     width: 100%;
     background-color: #1e272e;
