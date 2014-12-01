@@ -195,7 +195,6 @@ footer ul li {
 
 footer ul li a {
     font-size: 13px;
-    color: #6d7481;
 }
 
 footer .license {
@@ -206,6 +205,5 @@ footer .license {
 }
 
 footer .license a {
-    color: #6d7481;
     border-bottom: 1px dotted #6d7481;
 }
