@@ -16,7 +16,7 @@ a:hover {
 
 .header {
     width: 100%;
-    height: 400px;
+    min-height: 400px;
     -webkit-background-size: cover;
     background-size: cover;
     background-image: url("http://static.phalconphp.com/zephir/tumblr_static_paintedargyle.png");
@@ -37,7 +37,7 @@ a:hover {
 #logo {
     display: block;
     width: 140px;
-    height: 140px;
+    height: 75px;
     position: relative;
     left: 50%;
     margin-left: -78px;
