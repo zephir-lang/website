@@ -116,15 +116,9 @@ a:hover {
 .buffer-bottom {
     padding-bottom: 25px;
 }
-.friends {
-    width: 600px;
-    margin: 0 auto;
-}
 .friends .block {
-    width: 250px;
-    float: left;
-    margin-right: 50px;
     min-height: 100px;
+    float: left;
 }
 
 .team .row .photo {
