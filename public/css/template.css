@@ -85,8 +85,12 @@ a:hover {
 }
 
 .star-button {
-    float: right;
-    margin-top: 6px;
+    width: 140px;
+    margin: 0 auto;
+    height: 36px;
+    padding-top: 6px;
+    display: block;
+    overflow: hidden;
 }
 
 .container {
