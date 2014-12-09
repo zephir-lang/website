@@ -1,5 +1,7 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
+var gulp = require('gulp'),
+    sass = require('gulp-sass'),
+    concat = require('gulp-concat'),
+    minifyCSS = require('gulp-minify-css')
 
 gulp.task('sass', function () {
     gulp.src('./public/src/*.scss')
@@ -7,4 +9,17 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('./public/css'));
 });
 
-gulp.task('default', ['sass']);
+var cssPath = [
+    './public/vendor/foundation/css/normalize.css',
+    './public/css/my-foundation.css',
+    './public/css/template.css'
+];
+
+gulp.task('css', function () {
+    gulp.src(cssPath)
+        .pipe(minifyCSS({keepBreaks:true}))
+        .pipe(concat('all.css'))
+        .pipe(gulp.dest('./public/dist/'))
+});
+
+gulp.task('default', ['sass', 'css']);
