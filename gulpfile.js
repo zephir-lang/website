@@ -11,7 +11,7 @@ gulp.task('sass', function () {
 });
 
 var cssPath = [
-    './public/vendor/foundation/css/normalize.css',
+    './public/src/vendor/foundation/css/normalize.css',
     './public/css/my-foundation.css',
     './public/css/template.css'
 ];
