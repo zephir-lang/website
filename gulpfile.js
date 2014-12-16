@@ -24,14 +24,14 @@ gulp.task('css', function () {
 });
 
 var jsPath = [
-    './public/src/vendor/angular/angular.min.js',
+    './public/src/vendor/angular/angular.js',
     './public/src/vendor/angular-route/angular-route.js',
     './public/src/app.js'
 ];
 
 gulp.task('js', function() {
     gulp.src(jsPath)
-        .pipe(uglify())
+        //.pipe(uglify())
         .pipe(concat('app.js'))
         .pipe(gulp.dest('./public/dist/'))
 });
