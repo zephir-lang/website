@@ -1,8 +1,7 @@
-// create the module and name it scotchApp
-var scotchApp = angular.module('scotchApp', ['ngRoute']);
+var app = angular.module('app', ['ngRoute']);
 
 // configure our routes
-scotchApp.config(function($routeProvider) {
+app.config(function($routeProvider) {
     $routeProvider
 
         // route for the home page
@@ -23,12 +22,11 @@ scotchApp.config(function($routeProvider) {
         })
 });
 
-// create the controller and inject Angular's $scope
-scotchApp.controller('mainController', function($scope) {
+app.controller('mainController', function($scope) {
 });
 
-scotchApp.controller('teamController', function($scope) {
+app.controller('teamController', function($scope) {
 });
 
-scotchApp.controller('getStartedController', function($scope) {
+app.controller('getStartedController', function($scope) {
 });
