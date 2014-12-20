@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     ngAnnotate = require('gulp-ng-annotate'),
-    minifyCSS = require('gulp-minify-css')
+    minifyCSS = require('gulp-minify-css');
 
 gulp.task('sass', function () {
     gulp.src('./public/src/*.scss')
