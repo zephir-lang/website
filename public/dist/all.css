@@ -468,9 +468,9 @@ a:hover{color:#269abc!important;text-decoration:none}
 .col-sm-2{width:16.6%;float:left}
 .buffer-bottom{padding-bottom:25px}
 .friends .block{min-height:100px;float:left}
-.team .row .photo{float:left;padding-right:15px}
-.team .row .text{float:left;width:700px}
-.team .row img{width:150px;float:left}
+.team .row .photo{float:left;padding-right:15px;min-height:1px}
+.team .row .text{float:left}
+.team .row img{width:100%;float:left}
 .team .row .member{float:left;width:100%;font-size:21px;color:#000}
 .team .row .member:hover{color:#269abc}
 .team .row{margin-bottom:20px}
