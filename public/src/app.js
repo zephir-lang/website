@@ -1,7 +1,7 @@
 var app = angular.module('app', ['ngRoute']);
 
 // configure our routes
-app.config(function($routeProvider) {
+app.config(function($routeProvider, $locationProvider) {
     $routeProvider
 
         // route for the home page
@@ -20,6 +20,8 @@ app.config(function($routeProvider) {
             templateUrl : 'pages/get-started.html',
             controller  : 'getStartedController'
         })
+
+    $locationProvider.html5Mode(true);
 });
 
 app.controller('mainController', function($scope) {
