@@ -24,7 +24,10 @@ app.config(function($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
 });
 
-app.controller('mainController', function($scope) {
+app.controller('mainController', function($scope, $http) {
+    $http.get('https://api.github.com/repos/phalcon/zephir/releases').then(function(result) {
+        $scope.latestRelease = result.data[0];
+    });
 });
 
 app.controller('teamController', function($scope) {
