@@ -19,7 +19,7 @@ app.config(function($routeProvider, $locationProvider) {
         .when('/get-started', {
             templateUrl : 'pages/get-started.html',
             controller  : 'getStartedController'
-        })
+        });
 
     $locationProvider.html5Mode(true);
 });
