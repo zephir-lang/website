@@ -205,3 +205,19 @@ footer .license {
 footer .license a {
     border-bottom: 1px dotted #6d7481;
 }
+
+.lang-buttons{
+    position: absolute;
+    top:2px;
+    right:5px;
+}
+
+.lang-buttons>li{
+    display: inline-block;
+    list-style: none;
+}
+
+.lang-buttons>li>a{
+    color:white;
+    font-weight: bold;
+}

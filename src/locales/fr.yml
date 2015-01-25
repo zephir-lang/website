@@ -1,0 +1,16 @@
+fr:
+
+  lang: fr
+
+  title: Language Zephir
+
+  footer:
+    installing: Installer Zephir
+    documentation: Documentation
+
+  header:
+    zephir_description:  Zephir est un langage de progamation haut niveau et compil&eacute; destin&eacute; à la cr&eacute;ation d'extensions PHP
+
+
+  get_started:
+    title: Démarrer avec Zephir

@@ -1,0 +1,16 @@
+en:
+
+  lang: en
+
+  title: Zephir Language
+
+  footer:
+    installing: Installing Zephir
+    documentation: Documentation
+
+  header:
+    zephir_description: Zephir is a high level compiled language aimed to the creation of C-extensions for PHP
+
+
+  get_started:
+    title: Getting started with Zephir
