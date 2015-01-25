@@ -56,6 +56,7 @@ gulp.task('translate', function() {
             .pipe(
             translate('./src/locales/'+ translation +'.yml')
                 .on('error', function(){
+                    console.log("lang : " + translation);
                     console.dir(arguments);
                 })
             )

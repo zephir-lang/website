@@ -4,12 +4,35 @@ en:
 
   title: Zephir Language
 
-  footer:
-    installing: Installing Zephir
-    documentation: Documentation
 
   header:
     zephir_description: Zephir is a high level compiled language aimed to the creation of C-extensions for PHP
+    menu:
+      home: Home
+      get_started: Get started
+      try_it_online: Try it online
+      docs: docs
+      team: team
+      donate: donate
+
+    latest_stable: Latest <br /> stable
+    latest_nightly: Latest <br /> nightly
+
+
+  footer:
+    download: Download
+    installing: Installing Zephir
+    documentation: Documentation
+    license: License
+    community: Community
+    forum: Forum
+    github: GitHub
+    issue_tracker: Issue Tracker
+    blog: Blog
+    about: About
+    our_team: Our Team
+    license_description: Zephir is a high level compiled language aimed to the creation of C-extensions for PHP. It is available under the
+    mit_license: MIT License
 
 
   get_started:
