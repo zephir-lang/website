@@ -31,8 +31,6 @@ gulp.task('css', function () {
 var jsPath = [
     './public/src/vendor/angular/angular.min.js',
     './public/src/vendor/angular-route/angular-route.min.js',
-    './public/src/vendor/jquery/dist/jquery.js',
-    './public/src/vendor/jquery.cookie/jquery.cookie.js',
     './public/src/ZepWeb.js',
     './public/src/app.js'
 ];
