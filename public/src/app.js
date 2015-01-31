@@ -4,17 +4,7 @@ var app = new ZepWeb({
 });
 
 
-var userLanguage = ZepWeb.detectLanguage();
 
-// check if the user has already a session : do nothing
-// if the users comes for the fist time we start the session and we redirect it to the good language.
-if(!ZepWeb.hasSession()){
-    ZepWeb.startSession();
-    // if currently we are not in the good language, we redirect (only the first time)
-    if(userLanguage !== app.language){
-        window.location.replace("/langs/" + userLanguage + "/");
-    }
-}
 
 
 // configure our routes
@@ -41,10 +31,28 @@ app.angular.config(function($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
 });
 
-app.angular.controller('mainController', function($scope, $http) {
+app.angular.controller('mainController', function($scope, $http, $cookieStore) {
+
+});
+
+app.angular.controller('initController', function($scope, $http, $cookieStore) {
+
+    var userLanguage = ZepWeb.detectLanguage();
+    // check if the user has already a session : do nothing
+    // if the users comes for the fist time we start the session and we redirect it to the good language.
+
+    if(!$cookieStore.get("zep-session")){
+        $cookieStore.put("zep-session",1);
+        // if currently we are not in the good language, we redirect (only the first time)
+        if(userLanguage !== app.language){
+            window.location.replace("/langs/" + userLanguage + "/");
+        }
+    }
+
     $http.get('https://api.github.com/repos/phalcon/zephir/releases').then(function(result) {
         $scope.latestRelease = result.data[0];
     });
+
 });
 
 app.angular.controller('teamController', function($scope) {
