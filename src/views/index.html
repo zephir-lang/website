@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <base href="/">
-    <title>Zephir Language</title>
+    <title>{{ title | translate }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/dist/all.css" media="screen" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <script>var appLang = "en"</script>
+    <script>var appLang = "{{ lang | translate }}"</script>
     <script src="/dist/app.js"></script>
 </head>
-<body ng-controller="initController" class="lang-en">
+<body ng-controller="initController" class="lang-{{ lang | translate }}">
 
     <div class="header">
 
@@ -21,27 +21,27 @@
 
         <div class="row wrapper small-8 large-12 columns center-block">
             <h1>Zephir Language</h1>
-            <span>Zephir is a high level compiled language aimed to the creation of C-extensions for PHP</span>
+            <span>{{ header.zephir_description | translate }}</span>
 
             <div class="buttons small-12 large-10 medium-10 center-block">
-                <a href="/">Home</a>
-                <a href="/get-started">Get started</a>
-                <a href="/online">Try it online</a>
-                <a href="http://docs.zephir-lang.com/">docs</a>
-                <a href="/team">team</a>
-                <a href="https://pledgie.com/campaigns/27405?" target="_blank">donate</a>
+                <a href="/">{{ header.menu.home | translate }}</a>
+                <a href="/get-started">{{ header.menu.get_started | translate }}</a>
+                <a href="/online">{{ header.menu.try_it_online | translate }}</a>
+                <a href="http://docs.zephir-lang.com/">{{ header.menu.docs | translate }}</a>
+                <a href="/team">{{ header.menu.team | translate }}</a>
+                <a href="https://pledgie.com/campaigns/27405?" target="_blank">{{ header.menu.donate | translate }}</a>
             </div>
 
             <div class="latest-info large-offset-2 large-8">
                 <div class="block large-3">
                         <span>
-                            Latest <br /> stable
+                            {{ header.latest_stable | translate }}
                         </span>
                     <a href="{{ latestRelease.url }}" target="_blank">{{ latestRelease.tag_name }}</a>
                 </div>
                 <div class="block large-5">
                         <span>
-                            Latest <br /> nightly
+                            {{ header.latest_nightly | translate }}
                         </span>
                     <a href="#">0.5.9a #ee96c7</a>
                 </div>
@@ -61,32 +61,32 @@
     <footer>
         <div class="row">
             <div class="large-2 medium-4 small-6 columns">
-                <h4>Download</h4>
+                <h4>{{ footer.download | translate }}</h4>
                 <ul>
-                    <li><a href="/get-started">Installing Zephir</a></li>
-                    <li><a href="http://docs.zephir-lang.com/">Documentation</a></li>
-                    <li><a href="https://raw.githubusercontent.com/phalcon/zephir/master/LICENSE">License</a></li>
+                    <li><a href="/get-started">{{ footer.installing | translate }}</a></li>
+                    <li><a href="http://docs.zephir-lang.com/">{{ footer.documentation | translate }}</a></li>
+                    <li><a href="https://raw.githubusercontent.com/phalcon/zephir/master/LICENSE">{{ footer.license | translate }}</a></li>
                 </ul>
             </div>
             <div class="large-2 medium-4 small-6 columns">
-                <h4>Community</h4>
+                <h4>{{ footer.community | translate }}</h4>
                 <ul>
-                    <li><a href="http://forum.zephir-lang.com/">Forum</a></li>
-                    <li><a href="https://github.com/phalcon/zephir">GitHub</a></li>
-                    <li><a href="https://github.com/phalcon/zephir/issues">Issue Tracker</a></li>
+                    <li><a href="http://forum.zephir-lang.com/">{{ footer.forum | translate }}</a></li>
+                    <li><a href="https://github.com/phalcon/zephir">{{ footer.github | translate }}</a></li>
+                    <li><a href="https://github.com/phalcon/zephir/issues">{{ footer.issue_tracker | translate }}</a></li>
                 </ul>
             </div>
             <div class="large-2 medium-4 small-8 columns">
-                <h4>About</h4>
+                <h4>{{ footer.about | translate }}</h4>
                 <ul>
-                    <li><a href="http://blog.zephir-lang.com/">Blog</a></li>
-                    <li><a href="/team">Our Team</a></li>
+                    <li><a href="http://blog.zephir-lang.com/">{{ footer.blog | translate }}</a></li>
+                    <li><a href="/team">{{ footer.our_team | translate }}</a></li>
                 </ul>
             </div>
             <div class="large-5 large-offset-1 columns">
                 <p class="license">
-                    Zephir is a high level compiled language aimed to the creation of C-extensions for PHP. It is available under the <br>
-                    <a href="https://raw.githubusercontent.com/phalcon/zephir/master/LICENSE" target="_blank">MIT License</a>.
+                    {{ footer.license_description | translate }} <br>
+                    <a href="https://raw.githubusercontent.com/phalcon/zephir/master/LICENSE" target="_blank">{{ footer.mit_license | translate }}</a>.
                 </p>
             </div>
         </div>

@@ -1,0 +1,37 @@
+fr:
+
+  lang: fr
+
+  title: Language Zephir
+
+  header:
+    zephir_description:  Zephir est un langage de progamation haut niveau et compil&eacute; destin&eacute; à la cr&eacute;ation d'extensions PHP
+    menu:
+      home: Accueil
+      get_started: Premiers pas
+      try_it_online: L'essayer en ligne
+      docs: docs
+      team: L'&eacute;quipe
+      donate: Donnation
+
+    latest_stable: Latest <br /> stable
+    latest_nightly: Latest <br /> nightly
+
+
+  footer:
+    download: T&eacute;l&eacute;charger
+    installing: Installer Zephir
+    documentation: Documentation
+    license: Licence
+    community: Communaut&eacute;
+    forum: Forum
+    github: GitHub
+    issue_tracker: Issue Tracker
+    blog: Blog
+    about: "&Agrave; propos"
+    our_team: L'&eacute;quipe
+    license_description: Zephir est un langage de progamation haut niveau et compil&eacute; destin&eacute; à la cr&eacute;ation d'extensions PHP. Il est distribué sous
+    mit_license: Lincence MIT
+
+  get_started:
+    title: Démarrer avec Zephir
