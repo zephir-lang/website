@@ -1,43 +1,33 @@
-var ZepWeb = function(options){
-
+var ZepWeb = function (options) {
     this.language = options.language;
     this.templatePath = "/langs";
 
-    this.angular = angular.module(options.ngApp, ['ngRoute','ngCookies']);
-
+    this.angular = angular.module(options.ngApp, ['ngRoute', 'ngCookies']);
 };
 
-ZepWeb.availableLanguages = ["fr","en"];
+ZepWeb.availableLanguages = ["fr", "en"];
 
-ZepWeb.detectLanguage = function(){
-
-
+ZepWeb.detectLanguage = function () {
     var browserLanguage = window.navigator.userLanguage || window.navigator.language;
     browserLanguage = browserLanguage.split("-")[0];
 
-    if(ZepWeb.availableLanguages.indexOf(browserLanguage) >= 0){
+    if (ZepWeb.availableLanguages.indexOf(browserLanguage) >= 0) {
         return browserLanguage;
     }
 
     return "en";
-
 };
 
+ZepWeb.saveLanguage = function (lang) {
+    if (window.console) {
+        console.log(lang);
+    }
 
-
-ZepWeb.saveLanguage = function(lang) {
-
-    console.log(lang);
-
-    $.cookie("lang",lang,{ expires: 365, path: '/' });
+    $.cookie("lang", lang, {expires: 365, path: '/'});
 };
 
 ZepWeb.prototype = {
-
-    getTemplate : function(name){
-
+    getTemplate: function (name) {
         return this.templatePath + "/" + this.language + "/" + name;
-
     }
-
 };
