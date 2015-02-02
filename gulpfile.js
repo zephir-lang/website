@@ -48,12 +48,16 @@ gulp.task('js', function() {
 
 
 gulp.task('translate', function() {
-    var translations = ['en','fr'];
+    var translations = [
+        'en',
+        'fr',
+        'ru'
+    ];
 
     translations.forEach(function(translation){
         gulp.src('./src/views/**/*.html')
             .pipe(
-            translate('./src/locales/'+ translation +'.yml')
+            translate('./src/locales/'+ translation + '.yml')
                 .on('error', function(){
                     console.log("lang : " + translation);
                     console.dir(arguments);
@@ -65,7 +69,6 @@ gulp.task('translate', function() {
 
     gulp.src('./public/langs/en/index.html')
         .pipe(gulp.dest('./public'));
-
 });
 
 
