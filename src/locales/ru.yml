@@ -1,0 +1,39 @@
+en:
+
+  lang: ru
+
+  title: Язык программирования «Zephir»
+
+
+  header:
+    zephir_description: Zephir — это высокоуровневый язык программирования с открытым исходным кодом для быстрого и простого создания PHP расширений.
+    menu:
+      home: Home
+      get_started: Get started
+      try_it_online: Try it online
+      docs: Документация
+      team: Комманда
+      donate: Пожертвовать
+
+    latest_stable: Latest <br /> stable
+    latest_nightly: Latest <br /> nightly
+
+
+  footer:
+    download: Скачать
+    installing: Установка Zephir
+    documentation: Документация
+    license: Лицензия
+    community: Сообщество
+    forum: Форум
+    github: GitHub
+    issue_tracker: Issue Tracker
+    blog: Блог
+    about: О проекте
+    our_team: О команде
+    license_description: Zephir is a high level compiled language aimed to the creation of C-extensions for PHP. It is available under the
+    mit_license: MIT License
+
+
+  get_started:
+    title: Getting started with Zephir
